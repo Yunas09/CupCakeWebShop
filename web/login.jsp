@@ -13,6 +13,8 @@
     </head>
     <body>
         <h1>Login to cupcake.com</h1>
+        <%--Her opretter man en form der indeholder en action der peger på en den servlet.
+        Med en metode der post.Inde i formen er der 2 knapper.--%>
         <form action="servlet" method="post" >
             <table border="1">
                 <thead>
@@ -37,4 +39,5 @@
         <input type="submit" value="create new user" onclick="window.location = 'createlogin.jsp'" />
         </form>
     </body>
+    
 </html>

@@ -16,7 +16,7 @@ import javax.servlet.ServletContext;
 
 @WebServlet(name = "servlet", urlPatterns = {"/servlet"})
 public class servlet extends HttpServlet {
-
+//Her kalder man på sin Data klasse der indeholder UserName og PassWord. 
     DataAccess DA;
 
     @Override
@@ -38,6 +38,7 @@ public class servlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         String do_this = request.getParameter("do_this");
         switch (do_this) {
+            
             case "getuser":
        
                 String userName = request.getParameter("userName");
